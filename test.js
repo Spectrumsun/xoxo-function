@@ -12,11 +12,6 @@ describe('XOXO Function', () => {
         expect(xoxo).to.not.be.undefined;
     });
 
-    // it('should return a boolean ', function() {
-    //     const test = xoxo('rama', 'x', 'o')
-    //     expect(test).to.eql(true);
-    // });
-
     it('should return a true when no x or o is present ', () => {
         const test = xoxo('rama', 'x', 'o')
         expect(test).to.eql(true);

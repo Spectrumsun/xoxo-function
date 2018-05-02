@@ -9,9 +9,6 @@
 // XO("zzoo") => false```
 
 module.exports =  xoxo = (letter, check1, check2) => {
-  if(letter !== 'string'){
-    return 'Only string allowed'
-  }else {
     const arg = letter.toLowerCase()
     const countx = [];
     const counto = [];
@@ -26,12 +23,10 @@ module.exports =  xoxo = (letter, check1, check2) => {
     }
     return countx.length === counto.length ? true : false
   }
-}
 
 console.log(xoxo('ooxx' ,'x', "o"))
 console.log(xoxo('xooxx' ,'x', "o"))
 console.log(xoxo('ooxXm' ,'x', "o"))
 console.log(xoxo('zpzpzpp' ,'x', "o"))
 console.log(xoxo('zzoo' ,'x', "o"))
-
 console.log(xoxo('baba' ,'x', "o"))
